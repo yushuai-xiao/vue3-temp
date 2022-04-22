@@ -73,7 +73,19 @@ module.exports = {
         generator:{
           filename:"font/[name].[hash:6][ext]"
         }
-      }
+      },
+      // 方式一：在webpack中配置，方式二：单独配置文件
+      // {
+      //   test:/\.m?js$/,
+      //   use:{
+      //     loader:'babel-loader',
+      //     options:{
+      //       presets:[
+      //         ["@babel/preset-env"]
+      //       ]
+      //     }
+      //   }
+      // }
     ]
   },
   plugins:[
